@@ -1,70 +1,76 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pokédex React App Ϟ
 
-## Available Scripts
+Uma aplicação web moderna e interativa, construída com React, que consome a [PokéAPI](https://pokeapi.co/) para exibir informações detalhadas sobre Pokémon das três primeiras gerações. A interface é estilizada para ser visualmente atraente e responsiva, oferecendo uma experiência de usuário fluida e agradável.
 
-In the project directory, you can run:
+## ✨ Funcionalidades
 
-### `npm start`
+  - **Visualização por Geração**: Navegue facilmente entre a 1ª, 2ª e 3ª geração de Pokémon com botões dedicados.
+  - **Busca Dinâmica**: Filtre os Pokémon em tempo real por nome para encontrar seu favorito rapidamente.
+  - **Cards Interativos**: Cada Pokémon é exibido em um card estilizado que mostra sua imagem, nome e número na Pokédex.
+  - **Modal de Detalhes**: Ao clicar em um card, um modal surge com informações adicionais, como o tipo do Pokémon, carregadas dinamicamente da API.
+  - **Interface Moderna**: Um design com tema escuro, gradientes suaves e sombras que destacam os elementos, criando uma experiência imersiva.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-----
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias Utilizadas
 
-### `npm test`
+Este projeto foi construído utilizando as seguintes tecnologias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - **[React.js](https://reactjs.org/)**: Biblioteca JavaScript para a construção da interface de usuário.
+  - **[JavaScript (ES6+)](https://www.ecma-international.org/)**: Linguagem base para a lógica da aplicação.
+  - **[CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**: Utilizado para a estilização avançada, incluindo Flexbox para layouts responsivos.
+  - **[PokéAPI](https://pokeapi.co/)**: API RESTful gratuita utilizada como fonte de dados para todas as informações dos Pokémon.
 
-### `npm run build`
+-----
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Como Executar o Projeto Localmente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar este projeto em sua máquina, siga os passos abaixo. Você precisará ter o [Node.js](https://nodejs.org/en/) e o [NPM](https://www.npmjs.com/) (ou Yarn) instalados.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**1. Clone o Repositório**
 
-### `npm run eject`
+```bash
+git clone https://[SEU-LINK-PARA-O-REPOSITORIO-AQUI].git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**2. Navegue até a Pasta do Projeto**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd [NOME-DA-PASTA-DO-PROJETO]
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**3. Instale as Dependências**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Este comando irá instalar o React e outras bibliotecas necessárias.
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**4. Inicie o Servidor de Desenvolvimento**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A aplicação estará disponível em `http://localhost:3000` no seu navegador.
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-----
 
-### Analyzing the Bundle Size
+## 🏗️ Estrutura do Código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+O código-fonte principal está localizado no arquivo `App.js` e é dividido em algumas seções lógicas:
 
-### Making a Progressive Web App
+  - **Estado da Aplicação**: Utiliza os hooks `useState` e `useEffect` do React para gerenciar a lista de Pokémon, a geração selecionada, os dados do modal e o termo de busca.
+  - **Busca de Dados (Fetch)**: A função `useEffect` é responsável por fazer as chamadas à PokéAPI, atualizando a lista de Pokémon sempre que a geração é alterada.
+  - **Lógica do Modal**: As funções `openModal` e `closeModal` controlam a visibilidade e o carregamento dos dados detalhados de um Pokémon específico.
+  - **Renderização**: O retorno do componente `App` contém o JSX que estrutura a página, incluindo o cabeçalho, a barra de busca, os botões de geração e o container que mapeia e exibe os cards dos Pokémon.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-----
 
-### Advanced Configuration
+## ✒️ Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - **[Seu Nome]**
+  - **LinkedIn:** [Link para seu perfil no LinkedIn]
+  - **GitHub:** [Link para seu perfil no GitHub]
