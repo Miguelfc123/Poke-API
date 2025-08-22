@@ -10,6 +10,17 @@ Uma aplicação web moderna e interativa, construída com React, que consome a [
   - **Modal de Detalhes**: Ao clicar em um card, um modal surge com informações adicionais, como o tipo do Pokémon, carregadas dinamicamente da API.
   - **Interface Moderna**: Um design com tema escuro, gradientes suaves e sombras que destacam os elementos, criando uma experiência imersiva.
 
+---
+   Aqui voce ve como esta meu site:
+<img width="1917" height="770" alt="Captura de tela 2025-08-21 205412" src="https://github.com/user-attachments/assets/b4211b80-4309-4f76-b8f6-665e29fc2f2a" />
+
+   funcionalidade do Pesquisar e o Header do Site:
+<img width="435" height="205" alt="Captura de tela 2025-08-21 211635" src="https://github.com/user-attachments/assets/b44642a9-0e74-4878-a064-e0e8a8357627" />
+--
+
+
+
+
 -----
 
 ## 🚀 Tecnologias Utilizadas
