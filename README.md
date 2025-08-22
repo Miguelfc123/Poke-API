@@ -68,8 +68,3 @@ O código-fonte principal está localizado no arquivo `App.js` e é dividido em 
 
 -----
 
-## ✒️ Autor
-
-  - **[Seu Nome]**
-  - **LinkedIn:** [Link para seu perfil no LinkedIn]
-  - **GitHub:** [Link para seu perfil no GitHub]
